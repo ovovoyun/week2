@@ -114,6 +114,9 @@ h3 {
   padding: 72px 0px;
   color: white;
 }
+.banner img {
+  margin-right: 24px;
+}
 .banner__text {
   display: flex;
   flex-direction: column;
