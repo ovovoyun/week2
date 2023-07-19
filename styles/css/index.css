@@ -129,7 +129,6 @@ h3 {
 }
 .banner__text .contactBtn {
   align-self: flex-end;
-  width: 185px;
   padding: 12px 24px;
   border-radius: 32px;
   background-color: white;
@@ -177,7 +176,7 @@ h3 {
   list-style-position: inside;
 }
 .aboutMe__list li {
-  max-width: 306px;
+  width: calc(50% - 12px);
   padding: 16px;
   border: 1px solid #E3E3E3;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.0784313725);
@@ -188,9 +187,6 @@ h3 {
 }
 .aboutMe__list li:nth-child(1), .aboutMe__list li:nth-child(2) {
   margin-bottom: 24px;
-}
-.aboutMe__list li:nth-child(1), .aboutMe__list li:nth-child(3) {
-  margin-right: 24px;
 }
 .aboutMe__text {
   max-width: 526px;
@@ -231,7 +227,16 @@ h3 {
   display: block;
 }
 .contactMe__imgBlock img {
+  object-fit: cover;
   width: 162px;
+  height: 162px;
+  border-radius: 40px;
+}
+.contactMe__imgBlock img:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9);
+}
+.contactMe__imgBlock li:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* -------- my project --------*/
@@ -263,7 +268,7 @@ h3 {
   justify-content: space-between;
 }
 .project__rightBlock .project__textBlock .project__text .moreBtn {
-  width: 185px;
+  align-self: flex-start;
   padding: 12px 24px;
   border-radius: 32px;
   background-color: black;
